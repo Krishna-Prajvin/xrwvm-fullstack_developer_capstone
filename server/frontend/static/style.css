@@ -124,3 +124,71 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://di-uploads-pod45.dealerinspire.com/pearsonford/uploads/2022/07/Used-Car-Dealership-Near-Me-Blur.jpg') no-repeat center center fixed; /* Add your background image path here */
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.contact-container {
+    display: inline-block;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
