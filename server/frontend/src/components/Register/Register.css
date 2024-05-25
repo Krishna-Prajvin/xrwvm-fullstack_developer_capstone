@@ -3,7 +3,8 @@
   flex-direction: column;
   margin: auto;
   margin-top: 2%;
-  background-color: darkturquoise;
+  
+background-color: rgba(255, 255, 255, 0.6);
   min-width: 350px;
   width: 30%;
 }
@@ -50,7 +51,7 @@
 
 .header{
   font: 4em sans-serif;
-  color: white;
+  color: #272525;
   margin: .5cm;
 }
 
@@ -62,4 +63,12 @@
   border-radius:50px;
   text-align:center;
   box-shadow: 2px 2px 3px #999;  
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://di-uploads-pod45.dealerinspire.com/pearsonford/uploads/2022/07/Used-Car-Dealership-Near-Me-Blur.jpg') no-repeat center center fixed; /* Add your background image path here */
+    background-size: cover;
 }
