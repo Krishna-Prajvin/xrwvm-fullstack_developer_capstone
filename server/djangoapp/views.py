@@ -6,6 +6,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.views.decorators.csrf import csrf_exempt
 import logging
 import json
+from .models import CarMake, CarModel
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
@@ -42,6 +43,7 @@ def logout_user(request):
         return JsonResponse({"userName": username, "status": "Logged out"})
     else:
         return JsonResponse({"status": "Failed", "error": "Invalid request method"})
+
 @csrf_exempt
 def registration(request):
     context = {}
@@ -65,11 +67,25 @@ def registration(request):
     # If it is a new user
     if not username_exist:
         # Create user in auth_user table
-        user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name,password=password, email=email)
+        user = User.objects.create_user(username=username, first_name=first_name, last_name=last_name, password=password, email=email)
         # Login the user and redirect to list page
         login(request, user)
-        data = {"userName":username,"status":"Authenticated"}
+        data = {"userName": username, "status": "Authenticated"}
         return JsonResponse(data)
-    else :
-        data = {"userName":username,"error":"Already Registered"}
+    else:
+        data = {"userName": username, "error": "Already Registered"}
         return JsonResponse(data)
+
+def get_cars(request):
+    count = CarMake.objects.filter().count()
+    print(count)
+    if(count == 0):
+        initiate()
+    car_models = CarModel.objects.select_related('car_make')
+    cars = []
+    for car_model in car_models:
+        cars.append({"CarModel": car_model.name, "CarMake": car_model.car_make.name})
+    return JsonResponse({"CarModels":cars})
+def initiate():
+    from .populate import initiate as populate_initiate
+    populate_initiate()
