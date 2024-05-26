@@ -93,8 +93,8 @@ return(
           }
           {/* Add your links here */}
           <td>
-            <a href="https://u727822tuc28-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/get_dealers/">Get Dealers</a>
-            <a href="https://u727822tuc28-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/dealers/">Dealers List</a>
+            <a href="https://u727822tuc28-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/get_dealers/">Get Dealers</a>
+            <a href="https://u727822tuc28-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/dealers/">Dealers List</a>
           </td>
         </tr>
       ))}
