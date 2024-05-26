@@ -1,0 +1,17 @@
+{
+  "esversion": 6,
+  "asi": true,
+  "curly": false,
+  "eqeqeq": false,
+  "latedef": false,
+  "noarg": false,
+  "nonew": false,
+  "undef": false,
+  "unused": false,
+  "strict": false,
+  "maxparams": false,
+  "maxdepth": false,
+  "maxstatements": false,
+  "maxcomplexity": false,
+  "maxlen": false
+}
