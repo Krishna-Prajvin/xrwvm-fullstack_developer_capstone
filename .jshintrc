@@ -30,5 +30,6 @@
   "shadow": true,
   "sub": true,
   "supernew": true,
-  "validthis": true
+  "validthis": true,
+  "strict": false // Allow missing "use strict" directive
 }
