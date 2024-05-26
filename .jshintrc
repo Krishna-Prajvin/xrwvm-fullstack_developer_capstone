@@ -7,7 +7,7 @@
   "nonew": false,
   "noarg": false,
   "node": true,
-  "esversion": 6,
+  "esversion": 8, // Set ES version to 8 to allow async functions
   "asi": true,
   "boss": true,
   "debug": true,
@@ -31,5 +31,6 @@
   "sub": true,
   "supernew": true,
   "validthis": true,
-  "strict": false // Allow missing "use strict" directive
+  "strict": false, // Allow missing "use strict" directive
+  "regexdash": true // Allow unescaped characters in regex character classes
 }
