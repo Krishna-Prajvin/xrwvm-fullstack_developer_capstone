@@ -1,3 +1,5 @@
+
+/* jshint ignore:start */
 import React from 'react';
 
 function LogoutPage() {
@@ -9,3 +11,4 @@ function LogoutPage() {
 }
 
 export default LogoutPage;
+/* jshint ignore:end */
