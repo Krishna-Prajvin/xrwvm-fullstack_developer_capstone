@@ -1,4 +1,5 @@
 // RootPage.js
+/* jshint ignore:start */
 import React from 'react';
 
 const RootPage = () => {
@@ -10,3 +11,4 @@ const RootPage = () => {
 };
 
 export default RootPage;
+/* jshint ignore:start */
