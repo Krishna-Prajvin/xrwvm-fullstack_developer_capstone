@@ -49,7 +49,6 @@ const Register = () => {
 };
 
   return(
-    <body>
     <div className="register_container" style={{width: "50%"}}>
       <div className="header" style={{display: "flex",flexDirection: "row", justifyContent: "space-between"}}>
           <span className="text" style={{flexGrow:"1"}}>SignUp</span> 
@@ -93,7 +92,6 @@ const Register = () => {
         </div>
       </form>
       </div>
-      </body>
   )
 }
 
